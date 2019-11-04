@@ -12,11 +12,13 @@ public class ConstructTree {
     }
 
     public void drawTree(){
-
+        int branches = countTree(this.list);
     }
 
     public int countTree(ArrayList<Node> ls){
-
+        return ls.size();
     }
+
+
 
 }

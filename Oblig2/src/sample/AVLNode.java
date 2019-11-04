@@ -4,22 +4,20 @@ package sample;
 import javafx.scene.Node;
 
 public class AVLNode{
-    private Node element, leftChild, rightChild;
-    private int height;
+    private Node leftChild, rightChild;
+    private int height, element;
 
-    public AVLNode (Node element, Node leftChild, Node rightChild, int height){
+    public AVLNode (int element, int height){
         this.element = element;
-        this.leftChild = leftChild;
-        this.rightChild = rightChild;
         this.height = height;
     }
 
     //SET &  GET
-    public void setElement(Node e){
+    public void setElement(int e){
         this.element = e;
     }
 
-    public Node getElement(){
+    public int getElement(){
         return this.element;
     }
 
