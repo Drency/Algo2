@@ -1,20 +1,25 @@
 package sample;
 
+import javafx.scene.Node;
+
 public class AVLTree {
-    private String s;
 
+    private Node root;
+    private Node child;
 
-    public AVLTree(String s){
-        this.s = s;
+    public AVLTree(){
+
     }
 
-    public void setString(String s){
-        this.s = s;
+    public void addNode(Node n){
+        if(root == null)
+            this.root = n;
+        else
+            this.child = n;
     }
 
-    public String getString(){
-        return this.s;
+    public Node getRoot(){
+        return this.root;
     }
-
 
 }

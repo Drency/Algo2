@@ -1,5 +1,6 @@
 package sample;
 
+
 import javafx.scene.Node;
 
 public class AVLNode{
@@ -12,15 +13,6 @@ public class AVLNode{
         this.rightChild = rightChild;
         this.height = height;
     }
-
-    public void addRoot(Node element){
-        root = new Node<E>(null, this, element);
-    }
-
-    public Node getRoot(){
-        return root;
-    }
-
 
     //SET &  GET
     public void setElement(Node e){
